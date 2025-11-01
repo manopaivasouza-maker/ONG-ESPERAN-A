@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ong Esperança - Educação e Oficinas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Ong Esperança - aulas de reforço e oficinas de tecnologia. Junte-se a nós." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Ong<span class="brand-accent">Esperança</span></a>
+      <nav class="nav" id="nav">
+        <a href="#home">Início</a>
+        <a href="#about">Sobre</a>
+        <a href="#projects">Projetos</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#team">Equipe</a>
+        <a href="#contact">Contato</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-media">
+      <!-- Se houver video em assets com extensão webm/mp4, será usado; senão, usa imagem -->
+      <video id="heroVideo" autoplay muted loop playsinline onerror="this.style.display='none'">
+        <source src="assets/hero.mp4" type="video/mp4">
+        <source src="assets/hero.webm" type="video/webm">
+      </video>
+      <img src="assets/hero-placeholder.jpg" alt="Oficinas" class="hero-fallback">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content container">
+      <h1>Transformando Futuro através da Educação e Tecnologia</h1>
+      <p>Oficinas práticas, reforço escolar e mentoria para jovens. Junte-se como voluntário ou apoie nossas ações.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#projects">Conheça nossos projetos</a>
+        <a class="btn ghost" href="#contact">Entrar em contato</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Nossa missão</h2>
+        <p>Acolher jovens e oferecer ferramentas educacionais e tecnológicas que incentivem a aprendizagem, a criatividade e o protagonismo social.</p>
+        <img src="./imagem/acolher jovens.jpg" alt="">
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="./imagem/reforco-escolar-entenda-o-que-e-e-a-importancia.webp" alt="Aulas de reforço" onerror="this.style.display='none'">
+            <div class="card-body">
+              <h3>Aulas de reforço</h3>
+              <p>Matemática, Português e apoio escolar para alunos do ensino fundamental e médio.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./imagem/oficina de tecnologia.jpg" alt="Oficinas de tecnologia" onerror="this.style.display='none'">
+            <div class="card-body">
+              <h3>Oficinas de tecnologia</h3>
+              <p>Introdução a programação, robótica educativa e cidadania digital.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./imagem/292407-orientacao-profissional-como-saber-se-esta-no-caminho-certo.webp" alt="Mentoria" onerror="this.style.display='none'">
+            <div class="card-body">
+              <h3>Mentoria</h3>
+              <p>Orientação profissional, criação de currículo e preparação para o mercado.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <h2>Galeria</h2>
+        <div class="gallery-grid">
+          <img src="./imagem/download.jpg" alt="Galeria 1" onerror="this.style.display='none'">
+          <img src="./imagem/images (1).jpg" alt="Galeria 2" onerror="this.style.display='none'">
+          <img src="./imagem/images (2).jpg" alt="Galeria 3" onerror="this.style.display='none'">
+          <img src="./imagem/images.jpg" alt="Galeria 4" onerror="this.style.display='none'">
+        </div
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="container">
+        <h2>Equipe</h2>
+        <div class="team-grid">
+          <div class="member">
+            <img src="./imagem/crie uma imagem de uma mulher (1).jpg" alt="Voluntário 1" onerror="this.style.display='none'">
+            <h4>Ana Silva</h4>
+            <p>Coordenadora pedagógica</p>
+          </div>
+          <div class="member">
+            <img src="./imagem/crie umaimagem de um homen.jpg" alt="Voluntário 2" onerror="this.style.display='none'">
+            <h4>João Pereira</h4>
+            <p>Instrutor de tecnologia</p>
+          </div>
+          <div class="member">
+            <img src="./imagem/crie uma imagem de uma mulher.jpg" alt="Voluntário 3" onerror="this.style.display='none'">
+            <h4>Mariana Costa</h4>
+            <p>Gestora de projetos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate" class="section alt donate-section">
+      <div class="container">
+        <h2>Contribua</h2>
+        <p>Sua doação ajuda a manter oficinas e materiais. Escolha uma forma de contribuição.</p>
+        <div class="donate-actions">
+          <a class="btn" href="#contact">Doar via PIX</a>
+          <a class="btn ghost" href="#contact">Apoiar como voluntário</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contato</h2>
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
+            <label>Nome<span>*</span><input type="text" id="name" required></label>
+            <label>Email<span>*</span><input type="email" id="email" required></label>
+            <label>Mensagem<textarea id="message" rows="4" required></textarea></label>
+            <button class="btn" type="submit">Enviar</button>
+          </form>
+          <div class="contact-info">
+            <h3>Onde nos encontrar</h3>
+            <p>Rua Esperança, Centro — Cidade/UF</p>
+            <p>Email: contato@ongesperanca.org</p>
+            <p>Telefone: (00) 0000-0000</p>
+            <div class="video-small">
+              <video controls width="100%" src="assets/intro.mp4" onerror="this.style.display='none'"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ong Esperança. Todos os direitos reservados.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
